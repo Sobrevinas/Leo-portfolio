@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leo L. Sobrevinas Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #00dbde, #fc00ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 2s infinite alternate;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.05);
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      background: #fff;
+      color: #000;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      animation: fadeInUp 0.7s ease forwards;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #00dbde;
+    }
+    .resume-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00dbde;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .resume-btn:hover {
+      background: #fc00ff;
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #111;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello World! I'm Leo 👋</h1>
+    <p>Welcome to my beautifully crafted portfolio website.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="resume.pdf" download class="resume-btn">📄 Download Resume</a>
+  </nav>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I am a passionate developer who loves blending creativity with code to build engaging digital experiences. My goal? To make something truly different — and memorable.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2>My Projects</h2>
+      <ul>
+        <li><strong>🎨 Creative UI Concepts</strong> – Built with pure CSS and imagination.</li>
+        <li><strong>⚡ Fast & Lightweight</strong> – Projects that load in under a second.</li>
+        <li><strong>🌈 Theme Switchers</strong> – Dark, light, or neon? You decide.</li>
+        <li><strong>🖥️ Creating a Website</strong> – And to be a software Engineer</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Want to collaborate or say hi? Reach out at <a href="mailto:oelsobrevinas11@gmail.com" style="color:#00dbde;">oelsobrevinas11@gmail.com</a>
+      <p>Message me at my Facebook account <a href="mailto:https://www.facebook.com/profile.php?id=61569801233286" style="color:#2112c2;">https://www.facebook.com/profile.php?id=61569801233286</a>
+      <p>Call me in my number <a href="09163467486" style="color:#21af2d;">09163467486</a>
+
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Leo L. Sobrevinas Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>
